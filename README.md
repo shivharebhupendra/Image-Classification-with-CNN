@@ -115,8 +115,8 @@ Model: "sequential"
 
 1. Clone the repository:
 
-git clone https://github.com/shivharebhupendra/image-classification-cnn.git
-cd image-classification-cnn
+git clone https://github.com/shivharebhupendra/Image-Classification-with-CNN.git
+cd Image-Classification-with-CNN
 
 2. Install dependencies:
 
