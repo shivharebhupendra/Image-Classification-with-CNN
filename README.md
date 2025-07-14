@@ -2,23 +2,23 @@
 
 ## 📌 Project Purpose
 
-This project demonstrates how to build a Convolutional Neural Network (CNN) for **multi-class image classification** using the popular **CIFAR-10 dataset**. The goal is to train a model that can accurately identify images into one of the 10 predefined object classes.
+The purpose of this project is to build a Convolutional Neural Network (CNN) using TensorFlow and Keras to classify images from the CIFAR-10 dataset, which contains 60,000 32x32 color images in 10 different classes.
 
 ---
 
 ## ❓ Problem Statement
 
-Traditional machine learning models struggle with raw pixel data, especially for image classification tasks due to spatial and scale variations. The challenge is to develop a deep learning model that can learn spatial hierarchies and identify key patterns in images for robust classification.
+Traditional image classification approaches often struggle with low accuracy and high computational costs when working with large image datasets. This project aims to develop a deep learning model that can effectively learn spatial hierarchies and features in images to accurately predict the correct object class in unseen images.
 
 ---
 
-## 🎯 Project Objective
+## 🎯 Objectives
 
-- Build a CNN model from scratch using TensorFlow/Keras.
-- Train the model on CIFAR-10 dataset to classify 10 different classes.
-- Monitor and improve training and validation accuracy.
-- Visualize performance using graphs and prediction samples.
-- Achieve test accuracy in the range of **75%–85%**.
+- Load and preprocess CIFAR-10 image data.
+- Build a CNN model using TensorFlow/Keras.
+- Train the model and evaluate its performance using validation and test sets.
+- Use techniques like Dropout and Pooling to prevent overfitting and enhance accuracy.
+- Visualize training/validation performance and predictions.
 
 ---
 
@@ -44,6 +44,16 @@ Dataset is available via `keras.datasets.cifar10`.
 
 ---
 
+## 🛠️ Technologies Used
+
+- Python
+- TensorFlow / Keras
+- NumPy, Matplotlib, Seaborn
+- CNN (Conv2D, MaxPooling, Flatten, Dense)
+- Google Colab / Jupyter Notebook
+
+---
+
 ## 🧱 Model Architecture
 
 - ✅ Input: 32x32x3 RGB images
@@ -55,10 +65,29 @@ Dataset is available via `keras.datasets.cifar10`.
 
 ---
 
+## 📊 Model Summary
+
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+conv2d (Conv2D)              (None, 30, 30, 32)        896
+max_pooling2d (MaxPooling2D) (None, 15, 15, 32)        0
+flatten (Flatten)            (None, 7200)              0
+dense (Dense)                (None, 128)               921728
+dropout (Dropout)            (None, 128)               0
+dense_1 (Dense)              (None, 10)                1290
+=================================================================
+Total params: 923,914
+Trainable params: 923,914
+Non-trainable params: 0
+
+---
+
 ## 📈 Results
 
-- ✅ Final Validation Accuracy: ~**78%**
-- ✅ Final Test Accuracy: ~**76.9%**
+- ✅ Final Validation Accuracy: ~**79%**
+- ✅ Final Test Accuracy: ~**78.8%**
 - ✅ Model performs well across most CIFAR-10 classes
 
 ---
