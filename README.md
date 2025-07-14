@@ -92,8 +92,8 @@ Model: "sequential"
 
 ## 📈 Results
 
-- ✅ Final Validation Accuracy: ~**79%**
-- ✅ Final Test Accuracy: ~**78.8%**
+- ✅ Final Validation Accuracy: ~**80%**
+- ✅ Final Test Accuracy: ~**79%**
 - ✅ Model performs well across most CIFAR-10 classes
 
 ---
