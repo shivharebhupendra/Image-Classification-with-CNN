@@ -68,18 +68,31 @@ Dataset is available via `keras.datasets.cifar10`.
 ## 📊 Model Summary
 
 Model: "sequential"
+
 _________________________________________________________________
+
 Layer (type)                 Output Shape              Param #
+
 =================================================================
+
 conv2d (Conv2D)              (None, 30, 30, 32)        896
+
 max_pooling2d (MaxPooling2D) (None, 15, 15, 32)        0
+
 flatten (Flatten)            (None, 7200)              0
+
 dense (Dense)                (None, 128)               921728
+
 dropout (Dropout)            (None, 128)               0
+
 dense_1 (Dense)              (None, 10)                1290
+
 =================================================================
+
 Total params: 923,914
+
 Trainable params: 923,914
+
 Non-trainable params: 0
 
 ---
